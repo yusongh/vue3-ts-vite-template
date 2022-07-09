@@ -3,11 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "prepare": "husky install",
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
-    "format": "prettier --write ./**/*.{html,vue,ts,tsx,js,jsx,css,less,scss,json,md}"
+    "format": "prettier --write ./**/*.{html,vue,ts,js,json,md}"
   },
   "dependencies": {
     "vue": "^3.2.25"
@@ -20,6 +21,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.1.1",
+    "husky": "^8.0.1",
     "prettier": "^2.7.1",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
