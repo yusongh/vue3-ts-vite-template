@@ -11,7 +11,8 @@
     "format": "prettier --write ./**/*.{html,vue,ts,js,json,md}"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "vue": "^3.2.25",
+    "vue-router": "^4.1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
