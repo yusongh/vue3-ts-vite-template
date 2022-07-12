@@ -11,6 +11,7 @@
     "format": "prettier --write ./**/*.{html,vue,ts,js,json,md}"
   },
   "dependencies": {
+    "pinia": "^2.0.14",
     "vue": "^3.2.25",
     "vue-router": "^4.1.1"
   },
