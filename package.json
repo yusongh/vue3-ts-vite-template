@@ -12,6 +12,7 @@
     "lint:style": "stylelint \"./**/*.{css,less,vue,html}\" --fix"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "pinia": "^2.0.14",
     "vue": "^3.2.25",
     "vue-router": "^4.1.1"

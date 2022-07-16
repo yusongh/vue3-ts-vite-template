@@ -8,7 +8,6 @@ const modules = import.meta.globEager('./modules/**/*.ts')
 const routes: RouteRecordRaw[] = []
 
 Object.keys(modules).forEach((key) => {
-  console.log(key)
   const modulesRoutes = modules[key].default || {}
 
   let modRoutesList = []
