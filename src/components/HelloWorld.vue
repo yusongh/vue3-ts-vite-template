@@ -1,12 +1,20 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import useUserStore from '@/store/modules/user'
 
 defineProps<{ msg: string }>()
 
 const count = ref(0)
+
+const userStore = useUserStore()
+userStore.changeUserName({
+  userName: 'haha',
+  userId: 123
+})
 </script>
 
 <template>
+  <h1>userStore: {{ userStore.userInfo.userName }}</h1>
   <h1>{{ msg }}</h1>
 
   <p>
@@ -44,9 +52,9 @@ label {
 }
 
 code {
-  background-color: #eee;
   padding: 2px 4px;
-  border-radius: 4px;
   color: #304455;
+  background-color: #eee;
+  border-radius: 4px;
 }
 </style>
