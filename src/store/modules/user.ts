@@ -17,6 +17,10 @@ const useUserStore = defineStore('userStore', {
     }
   },
   actions: {
+    /**
+     * 修改用户信息
+     * @param {UserInfo} userInfo 用户信息
+     */
     changeUserName(userInfo: UserInfo) {
       this.userInfo = userInfo
     }
