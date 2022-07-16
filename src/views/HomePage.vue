@@ -5,5 +5,3 @@ import HelloWorld from '@/components/HelloWorld.vue'
 <template>
   <HelloWorld msg="Hello vue3 + ts + vite"></HelloWorld>
 </template>
-
-<style scoped></style>
